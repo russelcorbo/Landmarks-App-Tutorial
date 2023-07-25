@@ -12,6 +12,7 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // An observable obj needs to 'publish' any changes to its data so that
     // it's subscribers can pick up the changes
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 
