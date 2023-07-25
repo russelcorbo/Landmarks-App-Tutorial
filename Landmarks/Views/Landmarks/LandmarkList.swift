@@ -17,7 +17,6 @@ struct LandmarkList: View {
         }
     }
     
-    
     var body: some View {
         NavigationView {
             List { // to combine static and dynamic views in a list
