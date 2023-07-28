@@ -13,6 +13,7 @@ final class ModelData: ObservableObject {
     // An observable obj needs to 'publish' any changes to its data so that
     // it's subscribers can pick up the changes
     var hikes: [Hike] = load("hikeData.json")
+    @Published var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
